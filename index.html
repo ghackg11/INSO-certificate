@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitish Chahal</title>
+    <style>
+        form {
+            border: 2px solid black;
+            width: 100%;
+            height: 60vh;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: larger;
+        }
+        
+        .cont {
+            position: absolute;
+            left: 50%;
+            top: 14vw;
+            transform: translateX(-50%);
+        }
+        
+        input {
+            background-color: aliceblue;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 14vw;
+            height: 2.2vw;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #btnn {
+            width: fit-content;
+            height: fit-content;
+            padding: 20px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10vh;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            border: 4px solid green;
+        }
+        
+        iframe {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdm3Bj6_FM2Tb09yVVZiQUZryCCCqM5SdLneVmhK2Xw5r9vzg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <p style="width: 100%; text-align: center; font-size: 2.5vw;">Please scroll down and fill the complete contact form before moving ahead:)</p>
+    <button id="btnn">Get your personalised certificate now!</button>
+
+    <script>
+        document.getElementById('btnn').addEventListener('click', function() {
+            window.location.href = "certi.html";
+        });
+    </script>
+</body>
+
+</html>

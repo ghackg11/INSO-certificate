@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Nitish Chahal
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <style>
+        #vido {
+            position: relative;
+            width: 100%;
+        }
+        
+        #top {
+            width: 100%;
+            position: relative;
+        }
+        
+        #imgni {
+            position: relative;
+            width: 100%;
+        }
+        
+        #btnn {
+            width: fit-content;
+            height: fit-content;
+            padding: 20px;
+            position: relative;
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+            top: 10vh;
+            background-color: green;
+            margin-bottom: 20vh;
+            color: white;
+            border-radius: 20px;
+            border: 4px solid green;
+        }
+    </style>
+
+</head>
+
+
+<body id="body">
+    <center>
+
+        <video src="neeche.mp4" controls id="vido"></video>
+        <img src="top.jpeg" alt="top" id="top">
+        <img src="certineeche.jpeg" alt="" id="imgni">
+        <img src="sabseneeche.jpeg" alt="" id="imgni">
+
+        <button id="btnn">Press here to get your certificate</button>
+    </center>
+
+    <script>
+        document.getElementById('body').addEventListener('load', playVideo());
+
+        function playVideo() {
+            if (!document.getElementById('vido').playing)
+                document.getElementById('vido').play();
+        }
+
+        document.getElementById("btnn").addEventListener('click', function() {
+
+            window.location.href = 'https://forms.gle/JfHXBaF5JDxfajGK9';
+        });
+    </script>
+</body>
+
+</html>
